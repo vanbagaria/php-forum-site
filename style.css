@@ -1,0 +1,260 @@
+body {
+    width: 60em;
+    margin: 0 auto;
+    background-color: #000017;
+    color: #d9d9d9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2em;
+}
+
+/* Header */
+header {
+    /* border: 1px solid green; */
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    display: inline;
+}
+
+/* Header login form */
+#login-form {
+    /* border: 1px solid maroon; */
+    float: right;
+    display: flex;
+}
+
+.login-input {
+    /* border: 1px solid blue; */
+    margin-left: 0.3em;
+}
+
+.login-input input[type="text"], .login-input input[type="password"] {
+    margin-top: 0.3em;
+}
+
+#login-form-result {
+    float: right;
+    margin-right: 1em;
+    margin-top: 0.25em;
+    font-size: small;
+    color: #da004c;
+}
+
+#login-form-forgot-pass-link {
+    float: right;
+    margin-right: 1em;
+    margin-top: 0.25em;
+    font-size: small;
+}
+
+header button {
+    float: right;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #18184a;
+    border: 1px solid #3b3b68;
+    margin-bottom: 1em;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border: 1px solid #3b3b68;
+    margin: 0.1em;
+    background-color: #000017;
+}
+
+nav li a:hover {
+    background-color: #9c9cc38c;
+    text-decoration: underline;
+}
+
+nav li a:active {
+    background-color: #3b3b68;
+}
+
+#active-nav-button {
+    background-color: #474772;
+}
+
+#active-nav-button:active {
+    background-color: #3b3b68;
+}
+
+#nav_sign_out_link {
+    float: right;
+    margin-right: 1em;
+    margin-top: 0.6em;
+}
+
+/* Footer */
+footer {
+    margin-top: 10em;
+}
+
+#footer-signature {
+    font-size: small;
+} 
+
+.post-date-stamp {
+    font-size: smaller;
+}
+
+/* Global links */
+a {
+    text-decoration: none;
+    color: #7979a2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Global Form Inputs */
+input[type="text"], input[type="password"] {
+    border-color: #18184a;
+    background-color: #7979a2;
+    color: white;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: #c2c2c2;
+}
+
+input[type="file"] {
+    border: 1px solid #090924;
+    background-color: #7979a2;
+    color: white;
+}
+
+input[type="file"]:hover {
+    border-color: #c2c2c2;
+}
+
+input:disabled {
+    background-color: #4a4a64;
+    color: lightgray;
+}
+
+button {
+    border-color: #18184a;
+    background-color: #000017;
+    color: white;
+    padding: 0.3em;
+}
+
+button:hover {
+    background-color: #9c9cc38c;
+}
+
+button:active {
+    background-color: #3b3b68;
+}
+
+button:disabled {
+    background-color: #4a4a64;
+    color: gray;
+}
+
+/* Global General Purpose Container */
+.general-container {
+    background-color: #18184a;
+    border: 1px solid #3b3b68;
+    padding: 0.1em;
+}
+
+.general-container-title {
+    background-color: #474772;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.general-container-content {
+    padding: 0.5em;
+}
+
+/* General Purpose Form */
+.general-form {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.general-form-labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.general-form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+.general-form-labels label {
+    margin-bottom: 0.5em;
+}
+
+.general-form-inputs input {
+    margin-bottom: 0.5em;
+}
+
+.general-form-errors {
+    margin-left: 2em;
+}
+
+.general-form-errors .general-form-error-msg {
+    margin-bottom: 0.5em;
+    color: #da004c;
+    font-size: small;
+}
+
+.general-form-result {
+    margin-top: 1em;
+}
+
+.general-form-error-msg {
+    color: #da004c;
+}
+
+.general-form-success-msg {
+    color: #00da74;
+}
+
+/* Forum List */
+.forum-list-element {
+    background-color: #474772;
+    padding: 0.5em;
+    margin: 0.1em 0em;
+}
+
+.forum-list-element:hover {
+    background-color: #9c9cc38c;
+}
+
+.forum-list-element:active {
+    background-color: #3b3b68;
+}
+
+.forum-list-element a {
+    text-decoration: none;
+    color: #d9d9d9;
+}
+
+.forum-list-element a:hover {
+    text-decoration: underline;
+}

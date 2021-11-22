@@ -1,0 +1,13 @@
+.profile-container {
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+.profile-img {
+    border: 1px solid #474772;
+    background-color: #000017;
+    object-fit: contain;
+    width: 150px;
+    height: 150px;
+    margin-right: 1em;
+}
