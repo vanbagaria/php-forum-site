@@ -2,6 +2,7 @@
 
 ## Overview
 Forum website made with PHP and MySQL.
+[Click here](https://iodized-altimeter.000webhostapp.com) to see a demo.
 
 ## Features
 * User Log In / Registration system
