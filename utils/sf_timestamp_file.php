@@ -8,6 +8,6 @@
      * Note: Given filepath should be relative to the server root.
      */
     function sf_timestamp_file($file) {
-        return $file . "?v=" . filemtime($_SERVER["DOCUMENT_ROOT"] . "/" . $file);
+        return $file . "?v=" . filemtime($_SERVER["DOCUMENT_ROOT"] . "/forum/" . $file);
     }
 ?>

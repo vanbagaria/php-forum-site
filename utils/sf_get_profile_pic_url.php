@@ -13,7 +13,7 @@
         $default = "default/profile.png";
         $base_url = "userdata/$user_id/";
         
-        if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/" . $base_url . "profile.jpg")) {
+        if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/forum/" . $base_url . "profile.jpg")) {
             if($timestamped === true) {
                 return sf_timestamp_file($base_url . "profile.jpg");
             }
@@ -22,7 +22,7 @@
             }
         }
 
-        if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/" . $base_url . "profile.png")) {
+        if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/forum/" . $base_url . "profile.png")) {
             if($timestamped === true) {
                 return sf_timestamp_file($base_url . "profile.png");
             }

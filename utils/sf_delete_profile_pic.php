@@ -17,8 +17,8 @@
     if($_SERVER["REQUEST_METHOD"] == "POST") {
         $pic_path = sf_get_profile_pic_url($_SESSION["user_id"], false);
         if(strpos($pic_path, "default") === false) {
-            unlink($_SERVER["DOCUMENT_ROOT"] . "/" . $pic_path);
+            unlink($_SERVER["DOCUMENT_ROOT"] . "/forum/" . $pic_path);
         }
-        header("Location: /profile.php");
+        header("Location: /forum/profile.php");
     }
 ?>
