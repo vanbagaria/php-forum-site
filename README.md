@@ -1,8 +1,8 @@
-# php-forum-site
+# PHP Forum Site
 
 ## Overview
 Forum website made with PHP and MySQL.
-[Click here](https://iodized-altimeter.000webhostapp.com) to see a demo.
+[Click here](https://bagarias.com/forum/) to visit.
 
 ## Features
 * User Log In / Registration system
