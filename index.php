@@ -1,5 +1,10 @@
 <?php
     require_once "utils/sf_timestamp_file.php";
+    require_once "utils/sf_mysql.php";
+
+    $query_get_topics = "SELECT id, topic_name FROM forum_topics";
+    $sql_conn = sf_mysql_connect();
+    $result = sf_mysql_query($sql_conn, $query_get_topics);
 ?>
 
 <!doctype html>
@@ -22,30 +27,17 @@
 
     <main>
         <div class="general-container">
-            <div class="general-container-title">
-                Forums
-            </div>
-            <div class="forum-list-element">
-                <a href="#">General</a>
-            </div>
-            <div class="forum-list-element">
-                <a href="#">Games</a>
-            </div>
-            <div class="forum-list-element">
-                <a href="#">Music</a>
-            </div>
-            <div class="forum-list-element">
-                <a href="#">Animation</a>
-            </div>
-            <div class="forum-list-element">
-                <a href="#">Game Development</a>
-            </div>
-            <div class="forum-list-element">
-                <a href="#">Programming</a>
-            </div>
-            <div class="forum-list-element">
-                <a href="#">Feedback and Suggestions</a>
-            </div>
+            <?php
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="forum-list-element">';
+                    echo '<a href="topic.php?id=' . htmlspecialchars($row['id']) . '">' . htmlspecialchars($row['topic_name']) . '</a>';
+                    echo '</div>';
+                }
+            } else {
+                echo '<div class="forum-list-element">No topics available</div>';
+            }
+            ?>
         </div>
     </main>
 
