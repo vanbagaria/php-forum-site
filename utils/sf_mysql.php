@@ -22,12 +22,19 @@
     }
 
     /* Returns a mysqli result set if one is produced, returns the no of rows affected if not */
-    function sf_mysql_query($conn, $queryStr, $var, &...$vars) {
+    function sf_mysql_query($conn, $queryStr, $var = null, &...$vars) {
         global $db_log;
 
         $stmt = mysqli_stmt_init($conn);
         mysqli_stmt_prepare($stmt, $queryStr);
-        mysqli_stmt_bind_param($stmt, $var, ...$vars);
+
+        if ($var !== null) {
+            if (empty($vars)) {
+                mysqli_stmt_bind_param($stmt, $var);
+            } else {
+                mysqli_stmt_bind_param($stmt, $var, ...$vars);
+            }
+        }
         
         /* Kill the calling script on query failure */
         if(!mysqli_stmt_execute($stmt)) {
