@@ -26,6 +26,7 @@
     <?php require_once "components/nav_bar.php"; ?>
 
     <main>
+        <div class="general-container-title">Forums:</div>
         <div class="general-container">
             <?php
             if ($result->num_rows > 0) {

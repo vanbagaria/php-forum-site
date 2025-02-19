@@ -40,7 +40,7 @@
     <?php require_once "components/nav_bar.php"; ?>
 
     <main>
-        <h2><?php echo $topic_title; ?></h2>
+        <div class="general-container-title"><?php echo $topic_title; ?>:</div>
         <div class="general-container">
             <?php
             if ($result->num_rows > 0) {

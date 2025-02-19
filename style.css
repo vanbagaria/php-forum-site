@@ -60,7 +60,6 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #18184a;
-    border: 1px solid #3b3b68;
     margin-bottom: 1em;
 }
 
@@ -74,13 +73,12 @@ nav li a {
     text-align: center;
     padding: 0.5em 0.5em;
     text-decoration: none;
-    border: 1px solid #3b3b68;
     margin: 0.1em;
     background-color: #000017;
 }
 
 nav li a:hover {
-    background-color: #9c9cc38c;
+    background-color: #2c2c65;
     text-decoration: underline;
 }
 
@@ -159,7 +157,7 @@ button {
 }
 
 button:hover {
-    background-color: #9c9cc38c;
+    background-color: #2c2c65;
 }
 
 button:active {
@@ -174,12 +172,11 @@ button:disabled {
 /* Global General Purpose Container */
 .general-container {
     background-color: #18184a;
-    border: 1px solid #3b3b68;
     padding: 0.1em;
 }
 
 .general-container-title {
-    background-color: #474772;
+    background-color: #3b3b64;
     padding: 0.5em;
     font-weight: bold;
 }
@@ -237,13 +234,13 @@ button:disabled {
 
 /* Forum List */
 .forum-list-element {
-    background-color: #474772;
+    background-color: #25255e;
     padding: 0.5em;
     margin: 0.1em 0em;
 }
 
 .forum-list-element:hover {
-    background-color: #9c9cc38c;
+    background-color: #2c2c65;
 }
 
 .forum-list-element:active {
