@@ -2,7 +2,7 @@
     <footer>
         <hr>
         <div id="footer-signature">
-            &copy; 2021 Forum
+            &copy; <?php echo date("Y");?> Forum 
         </div>
     </footer>
     <!-- Footer include End -->

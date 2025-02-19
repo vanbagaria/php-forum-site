@@ -1,5 +1,5 @@
 body {
-    width: 60em;
+    max-width: 95%;
     margin: 0 auto;
     background-color: #000017;
     color: #d9d9d9;
@@ -21,8 +21,8 @@ header h1 {
 /* Header login form */
 #login-form {
     /* border: 1px solid maroon; */
-    float: right;
     display: flex;
+    justify-content: flex-end; /* Align login form to the right */
 }
 
 .login-input {
@@ -51,26 +51,40 @@ header h1 {
 
 header button {
     float: right;
+    margin-top: 0.25em;
 }
 
 /* Navigation Menu */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+nav {
+    display: flex; /* Use flexbox for the nav */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Center items vertically */
     background-color: #18184a;
     margin-bottom: 1em;
 }
 
+.nav-left, .nav-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for both left and right nav */
+}
+
+.nav-left {
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.nav-right {
+    justify-content: flex-end; /* Align items to the right */
+}
+
 nav li {
-    float: left;
+    text-align: center; /* Center text */
 }
 
 nav li a {
     display: block;
     color: #d9d9d9;
-    text-align: center;
     padding: 0.5em 0.5em;
     text-decoration: none;
     margin: 0.1em;
@@ -81,7 +95,6 @@ nav li a:hover {
     background-color: #2c2c65;
     text-decoration: underline;
 }
-
 nav li a:active {
     background-color: #3b3b68;
 }
@@ -95,9 +108,7 @@ nav li a:active {
 }
 
 #nav_sign_out_link {
-    float: right;
-    margin-right: 1em;
-    margin-top: 0.6em;
+    color: #a33e61;
 }
 
 /* Footer */
@@ -254,4 +265,65 @@ button:disabled {
 
 .forum-list-element a:hover {
     text-decoration: underline;
+}
+
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    margin-bottom: 2em;;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 0.5em; /* Less padding on small screens */
+    }
+
+    header {
+        text-align: center; /* Center header content */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        align-items: center; /* Center items vertically */
+    }
+
+    #login-form {
+        display: none;
+    }
+
+    header button {
+        display: none;;
+    }
+
+    .general-container {
+        padding: 0.5em;
+    }
+
+    .general-container-title {
+        font-size: 1.2em; /* Adjust title size */
+    }
+
+    .forum-list-element {
+        font-size: 0.9em; /* Adjust font size for forum list */
+    }
+
+    button {
+        padding: 0.5em; /* Increase button size for touch targets */
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 0.5em; /* Increase input size for touch targets */
+    }
 }

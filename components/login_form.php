@@ -16,8 +16,6 @@
                 <input id="password-input" type="password">
             </div>
         </form>
-        <br>
-        <br>
         <button type="submit" onclick="validateLogin();">Log In</button>
         <span id="login-form-result"></span>
 
